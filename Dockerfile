@@ -17,7 +17,7 @@ RUN npm i --global mocha
 #Install istanbul
 RUN npm install --save-dev nyc
 #Install HTML report generator
-RUN npm install -g mochawesome mochawesome-report-generato
+RUN npm install -g mochawesome mochawesome-report-generator
 # Bundle app source
 COPY . .
 
