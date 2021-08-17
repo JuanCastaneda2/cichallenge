@@ -7,7 +7,7 @@
   "scripts": {
     "start": "node server.js",
     "test": "mocha --spec ./test/*.js --reporter mochawesome",
-    "coverage": "nyc --reporter html mocha --reporter mochawesome"
+    "coverage": "nyc --reporter html --reporter-options reportDir=reports/coverage mocha --reporter mochawesome"
   },
   "dependencies": {
     "express": "^4.16.1",
