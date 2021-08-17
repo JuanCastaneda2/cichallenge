@@ -6,10 +6,15 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "test": "node test.js"
+    "test": "mocha --spec ./test/*.js --reporter mochawesome",
+    "coverage": "nyc --reporter html mocha --reporter mochawesome"
   },
   "dependencies": {
     "express": "^4.16.1",
     "test": ">=0.0.5"
+  },
+  "devDependencies": {
+    "mochawesome": "^6.2.2",
+    "nyc": "^15.1.0"
   }
 }

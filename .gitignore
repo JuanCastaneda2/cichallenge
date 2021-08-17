@@ -1,1 +1,5 @@
 node_modules/
+Jenkinsfile
+.nyc_output/
+mochawesome-report/
+coverage/
